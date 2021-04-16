@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uz,en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product name </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>
+
+        <a href="Home.html" class="brand">Orol.uz</a>    
+
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+                
+            <div class="dropdown">
+                <button class="dropbtn">Bo'limlar</button>
+                    <div class="dropdown-content">
+                        <a href="phone.html">Telefon va kompyuterlar</a>
+                        <a href="Asalari.html">Asal va asalarichilik buyumlari</a>
+                        <a href="darvoza.html">Eshik va darvozalar</a>
+                        <a href="kitob.html">Kitoblar</a>
+                    </div>
+                </div>
+
+                <a href="">Qanday harid qilaman?</a>
+                <a href="">Xabar yozish</a>
+                <a href="cart.html"><img src="img/cart.png" width="50px" height="50px"></a>
+            </div>
+            
+
+            <div class="btn">
+                <i class="fas fa-bars menu-btn"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="search">
+        <input type="text" class="searchTerm" placeholder="Qidirish...">
+        <button type="submit" class="searchButton"> 
+            <i class="fa fa-search"></i> 
+        </button> 
+    </section>
+
+    <div class="container">
+        <div class="card">
+            <div class="productBackground">
+                <div class="gradients">
+                    <div class="gradient second" color="blue"></div>
+                    <div class="gradient" color="white"></div>
+                    <div class="gradient" color="black"></div>
+                </div>
+
+                <img src="img/product img/galaxy-a51-havo rang.png" alt="" class="product show" color="blue">
+                <img src="img/product img/galaxy-a51-oq.png" alt="" class="product" color="white">
+                <img src="img/product img/galaxy-a51-qora.png" alt="" class="product" color="black">
+
+            </div>
+            <div class="info">
+                <div class="productName">
+                    <div>
+                        <h1 class="big">Galaxy A51</h1>
+                        <span class="new">new</span>
+                    </div>
+                    <h3 class="small">Samsung</h3>
+                </div>
+                <div class="description">
+                    <h3 class="title2">Mahsulot haqida</h3>
+                    <p class="text">SM-A515FZBUCAC <br>
+                        Asosiy kamera 48MP+12MP+5MP+5MP <br>
+                        Old tomon kamera 32MP <br></p>
+                </div>
+                <div class="color-container">
+                    <h3 class="title2">Rangi</h3>
+                    <div class="colors">
+                        <span class="color active" primary="#2175f5" color="blue"></span>
+                        <span class="color" primary="#7c5757" color="white"></span>
+                        <span class="color" primary="#444" color="black"></span>
+                    </div>
+                </div>
+                <div class="size-container">
+                    <h3 class="title2">Xotira sig'imi</h3>
+                    <div class="sizes">
+                        <span class="size active">64</span>
+                        <span class="size">128</span>
+                    </div>
+                </div>
+                <div class="buy-price">
+                    <a href="#" class="buy"><i class="fas fa-shopping-cart"></i>Savatga qo'shish</a>
+                    <div class="price2">
+                        <h1>0</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+
+
+    <footer id="footer" class="section footer">
+        <div class="container-2">
+            <div class="footer-container-2">
+                <div class="footer-center">
+                    <h3>Ma'lumotlar</h3>
+                    <a href="#">Biz haqimizda</a>
+                    <a href="#">Foydalanish qoidalari</a>
+                    <a href="#">Tovar yetkazib berish</a>
+                    <a href="#">Tovarni qaytarish</a>
+                </div>
+                <div class="footer-center">
+                    <h3> Biz ijtimoiy <br> tarmoqlarda</h3>
+                    <a href="#">Telegram</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
+                <div class="footer-center">
+                    <h3>Biz bilan aloqa</h3>
+                    <div>
+                        <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        Xorazm viloyati,Xiva tumani
+                    </div>
+                    <div>
+                        <span>
+                        <i class="far fa-envelope"></i>
+                        </span>
+                        Novidir@gmail.com
+                    </div>
+                    <div>
+                        <span>
+                        <i class="fas fa-phone"></i>
+                        </span>
+                        +998 ** *** ** **
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright &copy; 2021 - www.Orol.uz</p>
+    </footer>
+
+    <script>
+        
+        window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu-btn');
+        var closeBtn = document.querySelector('.close-btn');
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
